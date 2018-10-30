@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>EXERCICE 9</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="exercice9">
+    <div class="container-fluid">
+      <h1>Exercice 9 (En fait c'est l'exercice 1 de la partie 2 mais comme j'avais la flemme d'écrire tout ça bah j'écris juste exercice 9, voilà !)</h1>
+      <img src="img/image1.jpg" id="image1" alt="image1" />
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#image1").mouseover(function(){
+          $("img").attr("src", "img/image1_2.jpg");
+      });
+      $("#image1").mouseout(function(){
+          $("img").attr("src", "img/image1.jpg");
+      });
+    });
+  </script>
+</html>

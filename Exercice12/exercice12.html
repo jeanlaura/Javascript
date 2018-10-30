@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>EXERCICE 12</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="exercice12">
+    <div class="container-fluid">
+      <h1>Exercice 12 (En fait c'est l'exercice 4 de la partie 2 mais comme j'avais la flemme d'écrire tout ça bah j'écris juste exercice 12, voilà !)</h1>
+      <form id="form" method="post">
+          <label for="lastname">Votre nom  : </label><input type="text" name="lastname" value="Doe" id="lastname" />
+          <label for="firstname">Votre prenom  : </label><input type="text" name="firstname" value="John" id="firstname" />
+          <label for="city">Votre ville  : </label><input type="text" name="city" value="New York" id="city" />
+          <button type="button" name="button" id="button" onclick="vidage();">RAZ</button>
+      </form>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function vidage(){
+      obj1=document.getElementById('lastname');
+      obj2=document.getElementById('firstname');
+      obj3=document.getElementById('city');
+      obj1.value="";
+      obj2.value="";
+      obj3.value="";
+    }
+  </script>
+</html>

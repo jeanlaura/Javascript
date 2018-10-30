@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>EXERCICE 13</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="exercice13">
+    <div class="container-fluid">
+      <h1>Exercice 13 (En fait c'est l'exercice 5 de la partie 2 mais comme j'avais la flemme d'écrire tout ça bah j'écris juste exercice 13, voilà !)</h1>
+      <img src="img/image1.jpg" id="image1" onmouseover="imgBoucle(this)"/>
+      <img src="img/image2.jpg" id="image2" onmouseover="imgBoucle(this)" />
+      <img src="img/image3.jpg" id="image3" onmouseover="imgBoucle(this)" />
+      <img src="img/image4.jpg" id="image4" onmouseover="imgBoucle(this)" />
+      <img src="img/image5.jpg" id="image5" onmouseover="imgBoucle(this)" />
+    </div>
+  </body>
+  <script>
+      /*for(var i = 1; i<6; i++){
+        document.getElementById("image"+i).addEventListener("mouseover", function(){
+          this.src = "img/"+this.id+"_2.jpg";
+        })
+      };*/
+      function imgBoucle(image){
+        if (image.src = "img/"+image.id+".jpg"){
+          image.src = "img/"+image.id+"_2.jpg";
+        }
+      }
+  </script>
+</html>

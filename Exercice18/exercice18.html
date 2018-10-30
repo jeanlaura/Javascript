@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>EXERCICE 18</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="exercice18">
+    <div class="container-fluid">
+      <h1>Exercice 18 (En fait c'est l'exercice 4 de la partie 3 mais comme j'avais la flemme d'écrire tout ça bah j'écris juste exercice 18, voilà !)</h1>
+      <form id="form">
+          <label for="password">Votre mot de passe : </label><input type="text" name="password" id="password" />
+          <label for="confirmPassword">Confirmez : </label><input type="text" name="confirmPassword" id="confirmPassword" />
+          <button type="button" name="button" id="button">Vérification</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    var button = document.getElementById('button');
+    var password = document.getElementById('password');
+    var confirmPassword = document.getElementById('confirmPassword');
+
+    button.addEventListener('click', function() {
+      if(password.value  === confirmPassword.value) {
+        password.style.border="1px green solid";
+        confirmPassword.style.border="1px green solid";
+      } else {
+      password.style.border="1px red solid";
+      confirmPassword.style.border="1px red solid";
+      }
+    });
+    /*button.addEventListener("click", function(){
+      console.log(password.value);
+      if(confirmPassword === password){
+        password.style.border="1px green solid";
+        confirmPassword.style.border="1px green solid";
+      }else{
+        console.log(password.value);
+        console.log(confirmPassword.value);
+        password.style.border="1px red solid";
+        confirmPassword.style.border="1px red solid";
+      }
+    });*/
+  </script>
+</html>
